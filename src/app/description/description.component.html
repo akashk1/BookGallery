@@ -1,0 +1,30 @@
+
+<div class="container" style="background-color: white;">
+  <div class="row">
+    <div class="col-lg-9">
+      <div>
+          <!-- <img src="../../assets/icons/mobile.jpg" alt="Mobile" style="width: 100%;height: 100%;"> -->
+          <pdf-viewer class="pdfcontainer" [src]="pdfSrc" 
+              [render-text]="true"
+              style="display: block;" [page]="1"  [show-all]="false"></pdf-viewer>
+              <div class="row">
+                <div class="col-lg-8">
+                    <label for="psw"><b>Book Name : </b></label><br>
+                  <span>{{name}}</span>
+                </div>
+                <div class="col-lg-4"><a target="_blank" href="{{pdfSrc}}" class="btn btn-danger">Download</a><a routerLink="/uploads" class="btn btn-info">Back</a></div>
+              </div>
+              <label for="psw"><b>Description : </b></label><br>
+              <span>{{description}}</span>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <label style="font-size: 24px;margin: 5px 0 30px 0;">Reader</label><br>
+      <div class="imgcontainer">
+        <img src="../../assets/icons/reader.jpg" alt="Avatar" class="avatar">
+      </div>
+      <label class="photoinfo">I enjoyed reading as a hobby for a year. Very happy that people who don't have premium stock subscriptions can enjoy/and find use for my book store.</label>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

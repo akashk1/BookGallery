@@ -1,0 +1,67 @@
+
+  .imgcontainer {
+    text-align: center;
+  }
+  img.avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+  }
+  .photoinfo {
+    color: #878787;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  ul li  {
+    list-style-type: none;
+    padding: 4px 0 4px 0;
+    border-bottom: 1.5px solid #f1f1f1;
+  }
+  ul li a {
+    color: #878787;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #ea399a;
+  }
+
+  img.profile {
+      width: 25%;
+      height: 25%;
+      border-radius: 50%;
+  }
+
+  input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007acc;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .edit {
+    width: 100px;
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 18px;
+  }
+
+
+  

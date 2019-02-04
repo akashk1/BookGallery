@@ -1,0 +1,25 @@
+<nav class="navbar back">
+  <div class="container-fluid">
+    <div class="navbar-header shiftleft">
+      <h2>BookGallery</h2>
+      <h5>For all book lover</h5>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right shiftright">
+        <li><a routerLink="/home" routerLinkActive="active"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active"><span class="glyphicon glyphicon-envelope"></span> CONTACT</a></li>
+        <li><a routerLink="/about" routerLinkActive="active"><span class="glyphicon glyphicon-exclamation-sign"></span> ABOUT</a></li>
+        <li><a routerLink="/login" *ngIf="!authservice.authenticated()" routerLinkActive="active"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle mwidth" data-toggle="dropdown" *ngIf="authservice.authenticated()">
+            <span><img src={{profileimage}} alt="Avatar" class="avatar"></span> {{email}}</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/profile">View Profile</a></li>
+            <li><a routerLink="/uploads">View Uploads</a></li>
+            <li><a href="#" (click)="userlogout()">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
